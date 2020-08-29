@@ -18,20 +18,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r9F-7O-7XF">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-3h-ydq">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-3h-ydq" userLabel="RouteLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHV-LB-bVd">
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHV-LB-bVd" userLabel="RoutePickerView">
                                         <rect key="frame" x="0.0" y="68" width="414" height="341"/>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN1-A3-CI9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN1-A3-CI9" userLabel="RouteButton">
                                         <rect key="frame" x="0.0" y="409" width="414" height="68"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vC6-hZ-xWg">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vC6-hZ-xWg" userLabel="RouteScrollView">
                                         <rect key="frame" x="0.0" y="477" width="414" height="341"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="apT-SZ-qKM"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="nM5-SU-NJC"/>
@@ -57,6 +57,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="routeButton" destination="BN1-A3-CI9" id="eF1-BE-oeu"/>
+                        <outlet property="routeLabel" destination="Wjk-3h-ydq" id="jEL-rj-Y7z"/>
+                        <outlet property="routePickerView" destination="eHV-LB-bVd" id="7tl-Ib-Wuj"/>
+                        <outlet property="routeScrollView" destination="vC6-hZ-xWg" id="A26-QN-u7V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
