@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Shock
 
 struct routeType {
     var name: String?
