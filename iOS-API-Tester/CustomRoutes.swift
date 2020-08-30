@@ -27,14 +27,30 @@ class CustomRoutes {
         
         // Add your own routes here to test them in the example app
         routes = [
-            routeType(name: "Example1",
+            routeType(name: "Get 1 Todo",
                       method: "GET",
                       urlPath: "https://jsonplaceholder.typicode.com/todos/1",
                       query: [:],
                       requestHeaders: [:],
                       responseHeaders: [:],
                       code: 200,
-                      destination: "")
+                      destination: ""),
+            routeType(name: "Get All Posts",
+            method: "GET",
+            urlPath: "https://jsonplaceholder.typicode.com/posts",
+            query: [:],
+            requestHeaders: [:],
+            responseHeaders: [:],
+            code: 200,
+            destination: ""),
+            routeType(name: "Get All Comments",
+            method: "GET",
+            urlPath: "https://jsonplaceholder.typicode.com/comments",
+            query: [:],
+            requestHeaders: [:],
+            responseHeaders: [:],
+            code: 200,
+            destination: "")
         ]
     }
     
