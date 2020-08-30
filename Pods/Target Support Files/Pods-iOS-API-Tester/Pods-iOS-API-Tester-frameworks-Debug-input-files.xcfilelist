@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-iOS-API-Tester/Pods-iOS-API-Tester-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GRMustache/GRMustache.framework
+${BUILT_PRODUCTS_DIR}/JRSwizzle/JRSwizzle.framework
+${BUILT_PRODUCTS_DIR}/Shock/Shock.framework
+${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework
