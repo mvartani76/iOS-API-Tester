@@ -39,7 +39,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         routePickerView.layer.cornerRadius = 8.0
         routePickerView.layer.borderWidth = 0.5
         routePickerView.layer.borderColor = UIColor.gray.withAlphaComponent(0.5).cgColor
-        routeLabel.text = "asdlfkjasdlfkjsdlfkjasdlkfjasldkfjaslkdfjalskdfjalskdjflakdsjfklasdjfalksdfjalksdjfklasjfdklajfdlkajdfklajdflkjasdlfkjasldfkjalsdkfjalsdkfjalkdsfjalkdsjflakdsjflaskdjfalkdsjflakdsjfalkdjflakdjflkadjflkajsdkljafksdjflkajdfkajdfsklajdfklajfdlkasjflaksdjfalksdjflaksdjfklasjdflkjasdkfajdklfjalkdkfjalsdkfjalksdjflakdjfalkjfaldskjfalskdjfalkdsjfalkdsfjklajsdflkajdskljfklajdasklfjkalsdjfklasjlkfjaklsdjfalkjfsalkfj"
+        routeLabel.text = ""
     }
     
     @IBAction func performRequest(_ sender: UIButton) {
